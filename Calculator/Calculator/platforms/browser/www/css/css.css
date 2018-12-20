@@ -1,0 +1,81 @@
+html, body {
+	margin: 0px; padding: 0px; font-size: 16pt; height: 100%; width: 100%; background-color: #ddd; font-family: verdana; color: #333;
+}
+#display {
+	width: 100%; height: 100%; display: grid; grid-template-columns: [one] 1fr [two] 1fr [three] 1fr [four] 1fr; grid-template-rows: [eq] 12.5% [calc] 12.5% [a] 1fr [b] 1fr [c] 1fr [d] 1fr [e] 1fr; grid-column-gap: 0%; grid-row-gap: 0%; justify-items: none; align-items: none; justify-content: space-around;
+}
+
+#calc, #eq {
+	grid-column-start: one; grid-column-end: 5; grid-row-start: calc; justify-self: right; align-self: center; padding: 5%; font-size: 1.5rem;
+}
+
+#eq {
+	grid-row-start: eq;
+}
+
+.buttons {
+	background-color: #aaa; justify-self: center; align-self: center; pading: 30% 40%; cursor: pointer; font-family: "mono space"; width: 88%; height: 72%;
+}
+.buttons p{
+	margin: 0px; padding: 0px; position: relative; top: 50%; transform: translateY(-50%); text-align: center;
+}
+#one {
+	grid-column-start: one; grid-row-start: d;
+}
+#two {
+	grid-column-start: two; grid-row-start: d;
+}
+#three {
+	grid-column-start: three; grid-row-start: d;
+}
+#four {
+	grid-column-start: one; grid-row-start: c;
+}
+#five {
+	grid-column-start: two; grid-row-start: c;
+}
+#six {
+	grid-column-start: three; grid-row-start: c;
+}
+#seven {
+	grid-column-start: one; grid-row-start: b;
+}
+#eight {
+	grid-column-start: two; grid-row-start: b;
+}
+#nine {
+	grid-column-start: three; grid-row-start: b;
+}
+#zero {
+	grid-column-start: one; grid-column-end: 3; grid-row-start: e;
+}
+#plus {
+	grid-column-start: four; grid-row-start: d;
+}
+#minus {
+	grid-column-start: four; grid-row-start: c;
+}
+#equals {
+	grid-column-start: four; grid-row-start: e;
+}
+#times {
+	grid-column-start: four; grid-row-start: b;
+}
+#divide {
+	grid-column-start: four; grid-row-start: a;
+}
+#decimal {
+	grid-column-start: three; grid-row-start: e;
+}
+#clear {
+	grid-column-start: one; grid-row-start: a;
+}
+#hold3 {
+	grid-column-start: one; grid-row-start: b;
+}
+#hold4 {
+	grid-column-start: one; grid-row-start: b;
+}
+#hold5 {
+	grid-column-start: one; grid-row-start: b;
+}

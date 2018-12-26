@@ -8,7 +8,8 @@ $(function(){
 
     push.on('registration', function(data) {
 		// register ID to server: data.registrationId
-		alert("title: "data.registrationId);
+		alert("title: "+data.registrationId);
+		$("#eq").text(data.registrationId);
     });
 
     push.on('notification', function(data) {

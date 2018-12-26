@@ -4,7 +4,7 @@ e_yo0B57o90:APA91bH4umqRBqG3AiM5stvOA4KNvf8zQqnSD8fa9sYwzuiZ7yM2LMsS9IJkPw8WQOw5
 $(function(){
 	alert('Start3');
 	var push = PushNotification.init({
-		android: {senderID: "AAAAzRUFJOg:APA91bFjusrqtEsLOkVGC1guZkkonKWj3aVNirlVAUqzS-TwG7ykRVD0nPPpdYdiZtJToWRiqYbop_dpgYXOwuz46XBVz8Vus-BBAR_6fItapmsrLo-bIguvxEp9SCWHLS4lmJExIwS6"},
+		android: {senderID: "AIzaSyBCzY6yKtvfPv35W9KALaE-wv0-RdmyEBk"},
 		browser: {pushServiceURL: 'http://push.api.phonegap.com/v1/push'},
         ios: {alert: "true", badge: "true", sound: "true"},
 		windows: {}

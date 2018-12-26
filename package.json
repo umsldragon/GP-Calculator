@@ -1,0 +1,13 @@
+{
+  "name": "com.geekportfolio.calculator",
+  "version": "0.1.0",
+  "displayName": "Calculator",
+  "cordova": {
+    "platforms": [
+      "android"
+    ]
+  },
+  "dependencies": {
+    "cordova-android": "^7.1.4"
+  }
+}

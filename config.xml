@@ -9,11 +9,12 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
-	<platform name="android">
-		<resource-file src="google-services.json" target="google-services.json" />
-	</platform>
-	<preference name="android-build-tool" value="gradle" />
-	<plugin name="phonegap-plugin-push" source="npm">
-		<param name="SENDER_ID" value="AAAAzRUFJOg:APA91bFjusrqtEsLOkVGC1guZkkonKWj3aVNirlVAUqzS-TwG7ykRVD0nPPpdYdiZtJToWRiqYbop_dpgYXOwuz46XBVz8Vus-BBAR_6fItapmsrLo-bIguvxEp9SCWHLS4lmJExIwS6" />
-	</plugin>
+    <platform name="android">
+        <resource-file src="google-services.json" target="google-services.json" />
+    </platform>
+    <preference name="android-build-tool" value="gradle" />
+    <plugin name="phonegap-plugin-push" source="npm">
+        <param name="SENDER_ID" value="AAAAzRUFJOg:APA91bGYQ2xil2p_lioZSVKnzT66En1VZ6KAAIFT00RW7UgvYdqYcFNbzRoqG2doPtq8GDFeCx1fiFOJoc1vwdjpc11wCpUZlERROcrxeiXWctikuYBUV4unTQFDbUowcuQ4-TiMztZV" />
+    </plugin>
+    <engine name="android" spec="^7.1.4" />
 </widget>

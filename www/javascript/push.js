@@ -2,7 +2,7 @@
 e_yo0B57o90:APA91bH4umqRBqG3AiM5stvOA4KNvf8zQqnSD8fa9sYwzuiZ7yM2LMsS9IJkPw8WQOw5EhXFh5SdtTi6VXaHbFFkkozo3UPx7Pgn-LAlTyugpWuvPFkWaApJii_iAgMVwLX5wtd_D7s4VanTh8whO7aZSst-Sc7tbQ
 */
 $(function(){
-	alert('Start3');
+	alert('Start4');
 	var push = PushNotification.init({
 		android: {senderID: "AIzaSyBCzY6yKtvfPv35W9KALaE-wv0-RdmyEBk"},
 		browser: {pushServiceURL: 'http://push.api.phonegap.com/v1/push'},

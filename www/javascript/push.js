@@ -2,12 +2,12 @@
 e_yo0B57o90:APA91bH4umqRBqG3AiM5stvOA4KNvf8zQqnSD8fa9sYwzuiZ7yM2LMsS9IJkPw8WQOw5EhXFh5SdtTi6VXaHbFFkkozo3UPx7Pgn-LAlTyugpWuvPFkWaApJii_iAgMVwLX5wtd_D7s4VanTh8whO7aZSst-Sc7tbQ
 */
 $(function(){
-	alert('Start2');
+	alert('Start3');
 	var push = PushNotification.init({
-		android: {"senderID": "AIzaSyCl_HH_SctsH_--moo7VxCEIb4QsTxTQq4"},
+		android: {senderID: "AAAAzRUFJOg:APA91bFjusrqtEsLOkVGC1guZkkonKWj3aVNirlVAUqzS-TwG7ykRVD0nPPpdYdiZtJToWRiqYbop_dpgYXOwuz46XBVz8Vus-BBAR_6fItapmsrLo-bIguvxEp9SCWHLS4lmJExIwS6"},
 		browser: {pushServiceURL: 'http://push.api.phonegap.com/v1/push'},
-        ios: {"alert": "true", "badge": "true", "sound": "true"},
-		"windows": {}
+        ios: {alert: "true", badge: "true", sound: "true"},
+		windows: {}
 	});
 
     push.on('registration', function(data) {
@@ -31,8 +31,9 @@ $(function(){
 		alert("Error: "+e.message);
     });
 	
-	push.hasPermission(d => {
-		if(d.isEnabled){
+	push.hasPermission(data => {
+		alert("Permission Test");
+		if(data.isEnabled){
 			alert("Permission Granted");
 		}else{
 			alert("Permission Not Granted");

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.phonegap.helloworld" version="0.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.geekportfolio.calculator" version="0.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Calculator</name>
     <description>
         A blank PhoneGap app.
@@ -9,4 +9,8 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
+	<preference name="android-build-tool" value="gradle" />
+	<plugin name="phonegap-plugin-push" source="npm">
+		<param name="SENDER_ID" value="AIzaSyCl_HH_SctsH_--moo7VxCEIb4QsTxTQq4" />
+	</plugin>
 </widget>

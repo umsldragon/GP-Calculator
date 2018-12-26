@@ -1,3 +1,14 @@
-# GP-Calculator
-PhoneGap Test App
-Just me learning how to use PhoneGap Desktop, Github, Adobe PhoneGap Build, etc. I really should just use Native IDE's... it would probably be easier haha
+# A Blank PhoneGap App
+
+## Usage
+
+### PhoneGap CLI
+
+    $ phonegap create my-app --template blank
+
+### Desktop
+
+In your browser, open the file:
+
+    /www/index.html
+

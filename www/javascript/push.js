@@ -3,8 +3,11 @@ e_yo0B57o90:APA91bH4umqRBqG3AiM5stvOA4KNvf8zQqnSD8fa9sYwzuiZ7yM2LMsS9IJkPw8WQOw5
 */
 $(function(){
 	alert('Start2');
-	var push = PushNotification.init({ "android": {"senderID": "AIzaSyCl_HH_SctsH_--moo7VxCEIb4QsTxTQq4"},
-         "ios": {"alert": "true", "badge": "true", "sound": "true"}, "windows": {} } );
+	var push = PushNotification.init({
+		android: {"senderID": "AIzaSyCl_HH_SctsH_--moo7VxCEIb4QsTxTQq4"},
+		browser: {pushServiceURL: 'http://push.api.phonegap.com/v1/push'},
+        ios: {"alert": "true", "badge": "true", "sound": "true"},
+		"windows": {} } );
 
     push.on('registration', function(data) {
 		// register ID to server: data.registrationId

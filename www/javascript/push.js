@@ -7,7 +7,8 @@ $(function(){
 		android: {"senderID": "AIzaSyCl_HH_SctsH_--moo7VxCEIb4QsTxTQq4"},
 		browser: {pushServiceURL: 'http://push.api.phonegap.com/v1/push'},
         ios: {"alert": "true", "badge": "true", "sound": "true"},
-		"windows": {} } );
+		"windows": {}
+	});
 
     push.on('registration', function(data) {
 		// register ID to server: data.registrationId
@@ -29,4 +30,12 @@ $(function(){
         // e.message
 		alert("Error: "+e.message);
     });
+	
+	push.hasPermission(d => {
+		if(d.isEnabled){
+			alert("Permission Granted");
+		}else{
+			alert("Permission Not Granted");
+		}
+	});
 });

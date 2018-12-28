@@ -5,7 +5,7 @@ $(function(){
 	alert('Start4');
 	var push = PushNotification.init({
 		android: {senderID: 'AAAAzRUFJOg:APA91bGYQ2xil2p_lioZSVKnzT66En1VZ6KAAIFT00RW7UgvYdqYcFNbzRoqG2doPtq8GDFeCx1fiFOJoc1vwdjpc11wCpUZlERROcrxeiXWctikuYBUV4unTQFDbUowcuQ4-TiMztZV'},
-		browser: {'pushServiceURL': 'http://push.api.phonegap.com/v1/push'},
+		browser: {'pushServiceURL': 'https://push.api.phonegap.com/v1/push'},
         ios: {alert: "true", badge: "true", sound: "true"},
 		windows: {}
 	});
